@@ -1,2 +1,4 @@
 .idea
-
+.babelrc
+package.json
+node_modules
