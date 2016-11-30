@@ -1,3 +1,6 @@
+.body{
+    margin: 0px;
+}
 .header {
     background: #fbfffb;
     position: absolute;
@@ -70,4 +73,42 @@ footer{
     width:100%;
     height: 50px;
     background-color: #333;
+}
+
+#tel ul{
+    position: absolute;
+    bottom:-7px;
+    left: 542px;
+    width: 300px;
+    height:50px;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0px;
+    padding: 0px;
+}
+#tel li{
+    position: relative;
+    margin:-16px;
+    font-size: 14px;
+}
+#copyright{
+    position: absolute;
+    bottom: 8px;
+    left: 89%;
+    font-size: 11px;
+}
+#footerlogo{
+    font-size: 20px;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+}
+#footerlogo, #copyright, #tel{
+    color: #fbfffb;
+    margin: 0%;
+    font-family: 'Oswald', sans-serif;
+}
+#content{
+    width:auto;
+    height:auto;
 }
