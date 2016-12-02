@@ -1,21 +1,22 @@
 .body{
-    margin: 0px;
+    margin: 0;
+    width: 100%;
 }
 .header {
     background: #fbfffb;
     position: absolute;
-    top: 0px;
+    top: 0;
     width: 100%;
     height: 180px;
 }
 #logo-text {
-    margin: 0%;
+    margin: 0;
     font-family: 'Oswald', sans-serif;
     font-size: 60px;
 }
 #nav{
     position: absolute;
-    top: 100;
+    top: 100px;
     background: #333;
     border-bottom: 2px solid #169fe6;
     width: 100%;
@@ -41,7 +42,7 @@
 }
 #navbar{
     position: absolute;
-    top:0px;
+    top:0;
     left:55px;
 }
 #car{
@@ -84,7 +85,7 @@ footer{
     list-style-type: none;
     list-style-position: outside;
     margin: 0px;
-    padding: 0px;
+
 }
 #tel li{
     position: relative;

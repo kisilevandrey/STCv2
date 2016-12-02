@@ -1,0 +1,34 @@
+<form class="contact_form" action="" method="post" name="contact_form"  onsubmit="validate_main()">
+    <ul>
+        <li>
+            <h2>Регистрация</h2>
+        </li>
+        <li>
+            <label id="Names">Имя:</label>
+            <input type="text" id="Name" placeholder="John Smith" autofocus onkeyup="return validate_name()"  />
+        </li>
+        <li>
+            <label>Логин:</label>
+            <input type="text" id="UserName" placeholder="Your login" onkeyup="return validate_login()" />
+        </li>
+        <li>
+            <label>Email:</label>
+            <input type="email" id="UserEmail" placeholder="John.Smith@example.com" onkeyup="return validate_email()"/>
+        </li>
+        <li>
+            <label>Телефон:</label>
+            <input type="text" id="UserPhone" placeholder="+380... #не обязательно" />
+        </li>
+        <li>
+            <label>Пароль:</label>
+            <input type="password" id="UserPassword1" placeholder="Enter password" onkeyup= "return validate_pass1()"/>
+        </li>
+        <li>
+            <label>Пароль:</label>
+            <input type="password" id="UserPassword2" placeholder="Repeat password" onkeyup= "return validate_pass2()"/>
+        </li>
+        <li>
+            <button class="submit" type="submit">Регистрация</button>
+        </li>
+    </ul>
+</form>
