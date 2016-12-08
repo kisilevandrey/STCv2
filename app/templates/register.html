@@ -1,19 +1,19 @@
-<form class="contact_form" action="" method="post" name="contact_form"  onsubmit="validate_main()">
+<div class="contact_form" action="" method="post" name="contact_form">
     <ul>
         <li>
             <h2>Регистрация</h2>
         </li>
         <li>
             <label id="Names">Имя:</label>
-            <input type="text" id="Name" placeholder="John Smith" autofocus onkeyup="return validate_name()"  />
+            <input type="text" id="Name" placeholder="Your Name"/>
         </li>
         <li>
             <label>Логин:</label>
-            <input type="text" id="UserName" placeholder="Your login" onkeyup="return validate_login()" />
+            <input type="text" id="UserName" placeholder="Your Login" />
         </li>
         <li>
             <label>Email:</label>
-            <input type="email" id="UserEmail" placeholder="John.Smith@example.com" onkeyup="return validate_email()"/>
+            <input type="email" id="UserEmail" placeholder="Name@example.com" />
         </li>
         <li>
             <label>Телефон:</label>
@@ -21,14 +21,14 @@
         </li>
         <li>
             <label>Пароль:</label>
-            <input type="password" id="UserPassword1" placeholder="Enter password" onkeyup= "return validate_pass1()"/>
+            <input type="password" id="UserPassword1" placeholder="Enter password" />
         </li>
         <li>
             <label>Пароль:</label>
-            <input type="password" id="UserPassword2" placeholder="Repeat password" onkeyup= "return validate_pass2()"/>
+            <input type="password" id="UserPassword2" placeholder="Repeat password" />
         </li>
         <li>
             <button class="submit" type="submit">Регистрация</button>
         </li>
     </ul>
-</form>
+</div>
