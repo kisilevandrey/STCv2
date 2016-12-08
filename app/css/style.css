@@ -1,10 +1,8 @@
-.body{
-    margin-left: 0;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 0;
+body{
+    margin:0;
     width: 100%;
-    height:100%;
+    height:auto;
+    background-color: #e9ede9;
 }
 #content{
     position: absolute;
@@ -140,6 +138,7 @@ footer{
     left:42%;
     width: 220px;
     height: 155px;
+    margin-bottom: 200px;
 }
 .restore_pass button{
     margin-left:280px;
@@ -173,20 +172,20 @@ footer{
 }
 
 .login_form input[type="submit"] {
-    width: 100px;
-    height: 40px;
+    width: 90px;
+    height: 35px;
     margin-top: 7px;
     margin-left: 142px;
     color: #fff;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     text-shadow: 0px -1px 0px #8b8b8b;
     outline: none;
     border: 1px solid rgba(0, 0, 0, .49);
     background-clip: padding-box;
     border-radius: 6px;
-    background-color: #646970;
-    box-shadow: inset 0px 1px 0px #949494;
+    background-color: #333;
+    box-shadow: inset 0px 1px 0px #242424;
     cursor: pointer;
     transition: all .1s ease-in-out;
 }
@@ -206,6 +205,7 @@ footer{
     position: absolute;
     top:24px;
     left: 360px;
+    margin-bottom: 75px;
 }
 
 .contact_form h2, .contact_form label, .profile_form h2,
@@ -218,7 +218,7 @@ footer{
 }
 
 .contact_form ul, .profile_form ul, .restore_pass ul {
-    width: 650px;
+    width: 444px;
     list-style-type: none;
     list-style-position: outside;
     margin: 0px;
@@ -284,17 +284,17 @@ footer{
 }
 
 button.submit {
-    background-color: #68b12f;
-    background: linear-gradient(top, #68b12f, #50911e);
-    border: 1px solid #509111;
-    border-bottom: 1px solid #5b992b;
+    background-color: #333333;
+    background: linear-gradient(top, #3d3d3d, #2c2c2c);
+    border: 1px solid #333333;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.95);
     border-radius: 3px;
-    box-shadow: inset 0 1px 0 0 #9fd574;
+    box-shadow: inset 0 1px 0 0 rgba(6, 6, 6, 0.87);
     color: white;
     font-weight: bold;
     padding: 6px 20px;
     text-align: center;
-    text-shadow: 0 -1px 0 #396715;
+    text-shadow: 0 -1px 0 #333333;
 }
 
 button.submit:hover {
@@ -303,8 +303,8 @@ button.submit:hover {
 }
 
 button.submit:active {
-    border: 1px solid #20911e;
-    box-shadow: 0 0 10px 5px #356b0b inset;
+    border: 1px solid #232323;
+    box-shadow: 0 0 10px 5px #333333 inset;
 }
 
 .contact_form input:focus, .contact_form textarea:focus {
@@ -325,7 +325,9 @@ input:required, textarea:required {
     box-shadow: 0 0 5px #d4683c;
     border-color: #b0525e
 }
-
+.contact_form h2:{
+    text-align: center;
+}
 .contact_form input:required:valid, .contact_form textarea:required:valid,
 .restore_pass input:required:valid, .restore_pass textarea:required:valid{
     background: #fff no-repeat 98% center;
@@ -336,4 +338,35 @@ input:required, textarea:required {
     position: absolute;
     top: 314px;
     left: 708px;
+}
+.news_articles{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 80px;
+    position absolute;
+    top:100px;
+    left:20px;
+    width:50%;
+    height:auto;
+    border-right: 1px solid grey;
+}
+.articles{
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 80px;
+    position: absolute;
+    top:-20px;
+    right:20px;
+    width:45%;
+    height:auto;
+}
+article{
+
+    border-bottom: 1px solid grey;
+    margin-right:25px;
+}
+#news_head{
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    text-align:  center;
 }
