@@ -1,7 +1,7 @@
 <div class="login_form" >
-    <label for="username">Логин:</label><input type="text" id="UserName"  placeholder="email@example.com">
-    <label for="password">Пароль:</label><input type="password" id="UserPassword" placeholder="Ваш пароль">
-    <input type="submit" value="Войти">
+    <label>Логин:</label><input type="text" id="UserName"  placeholder="email@example.com" required>
+    <label>Пароль:</label><input type="password" id="UserPassword" placeholder="Ваш пароль" required>
+    <input type="submit" value="Войти" onclick="userSessionStorageRead()">
 </div>
 <div>
     <a class="forgot_pass" onclick="$('#content').load('templates/restore_password.html');">Забыли пароль?</a>

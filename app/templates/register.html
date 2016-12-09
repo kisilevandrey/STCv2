@@ -1,34 +1,34 @@
-<div class="contact_form" action="" method="post" name="contact_form">
+<div class="contact_form">
     <ul>
         <li>
             <h2>Регистрация</h2>
         </li>
         <li>
-            <label id="Names">Имя:</label>
-            <input type="text" id="Name" placeholder="Your Name"/>
+            <label id="names">Имя:</label>
+            <input type="text" id="Name" placeholder="Your Name" required/>
         </li>
         <li>
             <label>Логин:</label>
-            <input type="text" id="UserName" placeholder="Your Login" />
+            <input type="text" id="UserName" placeholder="Your Login" required />
         </li>
         <li>
             <label>Email:</label>
-            <input type="email" id="UserEmail" placeholder="Name@example.com" />
+            <input type="email" id="UserEmail" placeholder="Name@example.com" required />
         </li>
         <li>
             <label>Телефон:</label>
-            <input type="text" id="UserPhone" placeholder="+380... #не обязательно" />
+            <input type="text" id="UserPhone" placeholder="+380... #не обязательно" required />
         </li>
         <li>
             <label>Пароль:</label>
-            <input type="password" id="UserPassword1" placeholder="Enter password" />
+            <input type="password" id="UserPassword1" placeholder="Enter password" required />
         </li>
         <li>
             <label>Пароль:</label>
-            <input type="password" id="UserPassword2" placeholder="Repeat password" />
+            <input type="password" id="UserPassword2" placeholder="Repeat password" required />
         </li>
         <li>
-            <button class="submit" type="submit">Регистрация</button>
+            <button class="submit" type="submit" onclick="userSessionStorageWrite()">Регистрация</button>
         </li>
     </ul>
 </div>
