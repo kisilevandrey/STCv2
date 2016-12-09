@@ -159,7 +159,7 @@ footer{
     padding-left: 20px;
     background-clip: padding-box;
     border-radius: 6px;
-    background-color: lightgray;
+    background-color: #fbfffb;
     box-shadow: inset 0px 2px 0px #d9d9d9;
 }
 
@@ -203,8 +203,8 @@ footer{
 
 .contact_form, .profile_form, .restore_pass{
     position: absolute;
-    top:24px;
-    left: 360px;
+    top:50px;
+    left: 418px;
     margin-bottom: 75px;
 }
 
@@ -236,8 +236,12 @@ footer{
     border-bottom:1px solid #777;
 }
 
-.contact_form h2, .profile_form h2, .restore_pass h2 {
-    margin-left: 200px;
+.contact_form h2, .profile_form h2{
+    margin-left: 143px;
+    display: inline;
+}
+.restore_pass h2{
+    margin-left: 72px;
     display: inline;
 }
 
