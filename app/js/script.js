@@ -29,3 +29,13 @@ function userSessionStorageRead(){
         alert("Неверный пароль или логин")
     }
 }
+function changeSessionStorage() {
+    var loginRead = sessionStorage.getItem("login");
+    var passwordRead = sessionStorage.getItem("password");
+    var inputLogin = document.getElementById("UserName");
+    var inputPasword = document.getElementById("UserPassword");
+    var buttonsLogin = document.getElementById("buttonsLogin");
+    if (inputLogin == loginRead && inputPasword == passwordRead) {
+        buttonsLogin.style.display="none";}
+
+}
