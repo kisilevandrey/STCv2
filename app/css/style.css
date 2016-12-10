@@ -146,7 +146,6 @@ footer{
 .login_form label {
     display: none;
 }
-
 .login_form input[type="text"],.login_form input[type="password"] {
     width: 100%;
     height: 40px;

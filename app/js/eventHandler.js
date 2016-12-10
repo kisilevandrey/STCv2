@@ -1,0 +1,2 @@
+import ValidateAll from "validate"
+
