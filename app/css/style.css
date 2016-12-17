@@ -21,19 +21,28 @@ body{
     font-family: 'Oswald', sans-serif;
     font-size: 60px;
 }
-#register_button{
+#register_button, #register_button:active, #register_button:focus{
     color: #fbfffb;
     position: absolute;
     top:127px;
     right: 85px;
     text-decoration: none;
+    outline: none;
+    border: 0;
+    background-color: #333;
 }
-#login_button{
+#login_button, #login_button:active, #login_button:focus{
     color: #fbfffb;
     position: absolute;
     top: 127px;
     right:15px;
     text-decoration: none;
+    outline: none;
+    border: 0;
+    background-color: #333;
+}
+#login_button:hover, #register_button:hover {
+    cursor: pointer;
 }
 #nav{
     position: relative;
@@ -217,7 +226,7 @@ footer{
 }
 
 .contact_form ul, .profile_form ul, .restore_pass ul {
-    width: 444px;
+    width: 450px;
     list-style-type: none;
     list-style-position: outside;
     margin: 0px;
@@ -226,14 +235,10 @@ footer{
 
 .contact_form li, .profile_form li, .restore_pass li{
     padding:12px;
-    border-bottom:1px solid #eee;
     position:relative;
 }
 
-.contact_form li:first-child, .contact_form li:last-child, .profile_form li:first-child,
-.profile_form li:last-child, .restore_pass li:first-child, .restore_pass li:last-child {
-    border-bottom:1px solid #777;
-}
+
 
 .contact_form h2, .profile_form h2{
     margin-left: 143px;
@@ -277,7 +282,7 @@ footer{
 .profile_form textarea, .restore_pass input, .restore_pass textarea {
     border:1px solid #aaa;
     box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
-    border-radius:2px;
+    border-radius:5px;
 }
 
 .contact_form input:focus, .contact_form textarea:focus {
@@ -291,7 +296,7 @@ button.submit {
     background: linear-gradient(top, #3d3d3d, #2c2c2c);
     border: 1px solid #333333;
     border-bottom: 1px solid rgba(51, 51, 51, 0.95);
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: inset 0 1px 0 0 rgba(6, 6, 6, 0.87);
     color: white;
     font-weight: bold;
@@ -311,16 +316,12 @@ button.submit:active {
 }
 
 .contact_form input:focus, .contact_form textarea:focus {
-    padding-right:70px;
+    padding-right:35px;
 }
 
 .contact_form input, .profile_form input, .contact_form textarea {
     transition: padding .25s;
     padding-right:30px;
-}
-
-input:required, textarea:required {
-    background: #fff url(images/asterisk.jpg) no-repeat 98% center;
 }
 
 .contact_form input:focus:invalid, .contact_form textarea:focus:invalid {

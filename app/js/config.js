@@ -1,4 +1,4 @@
-const conf = [
+export const conf = [
     {id:"Name",
     minlength:3,
     maxlength:30},

@@ -1,3 +1,15 @@
+$('.submit').on('click', userSessionStorageWrite);
+$('#login_button').on('click', login);
+$('#register_button').on('click',register);
+
+
+
+
+
+
+var a = document.getElementsByClassName("submit");
+
+
 function userSessionStorageWrite() {
     var login = document.getElementById("UserName");
     var name = document.getElementById("Name");
@@ -9,8 +21,8 @@ function userSessionStorageWrite() {
     sessionStorage.setItem("email", email);
     sessionStorage.setItem("password", password);
     sessionStorage.setItem("phoneNumber", phoneNumber);
-    alert("Success");
     $('#content').load('templates/login.html');
+    console.log("jhkjhlkmljnkhgvhf");
 }
 
 function userSessionStorageRead(){
@@ -39,3 +51,31 @@ function changeSessionStorage() {
         buttonsLogin.style.display="none";}
 
 }
+
+var contentElement = $('#content');
+function login(url) {
+    $.ajax({
+        url:"templates/login.html",
+        dataType: 'html',
+        success: function(response) {
+            contentElement.html(response);
+        },
+        error: function() {
+            console.log('error')
+        },
+    });
+}
+
+function register(url) {
+    $.ajax({
+        url:"templates/register.html",
+        dataType: 'html',
+        success: function(response) {
+            contentElement.html(response);
+        },
+        error: function() {
+            console.log('error')
+        },
+    });
+}
+
