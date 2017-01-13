@@ -1,13 +1,19 @@
-$('.submit').on('click', userSessionStorageWrite);
+//$('.submit').on('click', userSessionStorageWrite);//
 $('#login_button').on('click', login);
 $('#register_button').on('click',register);
+$('#contacts').on('click', contactPage);
+$('#car').on('click', autos);
+$('.submit').on('click', validateFormRegister);
 
-
-
-
-
-
-var a = document.getElementsByClassName("submit");
+function validateFormRegister() {
+    if (!document.getElementById('Name').value) {
+        document.getElementById('err').innerHTML = 'Заполните это поле';
+        return false;
+    }
+    else {
+        document.getElementById('err').innerHTML = "";
+    }
+}
 
 
 function userSessionStorageWrite() {
@@ -79,3 +85,28 @@ function register(url) {
     });
 }
 
+function contactPage(url) {
+    $.ajax({
+        url:"templates/contact.html",
+        dataType: 'html',
+        success: function(response) {
+            contentElement.html(response);
+        },
+        error: function() {
+            console.log('error')
+        },
+    });
+}
+
+function autos(url) {
+    $.ajax({
+        url: "templates/autos.html",
+        dataType: 'html',
+        success: function (response) {
+            contentElement.html(response);
+        },
+        error: function () {
+            console.log('error')
+        },
+    });
+}
