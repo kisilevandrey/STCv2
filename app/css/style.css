@@ -44,6 +44,16 @@ body{
 #login_button:hover, #register_button:hover {
     cursor: pointer;
 }
+#userLogo{
+    position: absolute;
+    top: 102px;
+    right: 0px;
+    color: white;
+    border-left: solid white 1px;
+    padding-left: 9px;
+    padding-right: 9px;
+    display: none;
+}
 #nav{
     position: relative;
     top: 12px;
@@ -166,9 +176,8 @@ footer{
     border: 1px solid rgba(0, 0, 0, .49);
     padding-left: 20px;
     background-clip: padding-box;
-    border-radius: 6px;
+    border-radius: 4px;
     background-color: #fbfffb;
-    box-shadow: inset 0 2px 0 #d9d9d9;
 }
 
 .login_form input[type="text"]:focus,.login_form input[type="password"]:focus {
@@ -364,8 +373,17 @@ button.submit:active {
     width:45%;
     height:auto;
 }
-article{
+.newsArticlesPage{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 80px;
+    position: absolute;
+    top: 100px;
+    left: 205px;
+    width: 71%;
+    height: auto;}
 
+article{
     border-bottom: 1px solid grey;
     margin-right:25px;
 }
@@ -429,9 +447,9 @@ ul.products {
     margin-bottom: 125px;
     position: absolute;
 }
-#err{
+.err{
     position: absolute;
-    width: 20px;
+    width: 300px;
     bottom: 1px;
     height: 23px;
     left: 455px;
