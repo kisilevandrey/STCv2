@@ -41,7 +41,7 @@ body{
     border: 0;
     background-color: #333;
 }
-#login_button:hover, #register_button:hover {
+#login_button:hover, #register_button:hover, #car:hover, #news:hover, #contacts:hover {
     cursor: pointer;
 }
 #userLogo{
@@ -455,3 +455,28 @@ ul.products {
     left: 455px;
     color: #d5354b;
 }
+.frm{
+    width: 366px;
+    height: 250px;
+    margin: 10px;
+    border: solid gray 2px;
+}
+
+#car_photo1{
+    background-image: url("img/308/30801.jpg");}
+#car_photo2{
+    background-image: url("img/2109/vaz01.jpg");}
+#car_photo3{
+    background-image: url("img/accord/accord1.jpg");}
+#car_photo4{
+    background-image: url("img/aveo/smart01.jpg");}
+#car_photo5{
+    background-image: url("img/bmw 525/bmw01.jpg");}
+#car_photo6{
+    background-image: url("img/camry/camry01.jpg");}
+#car_photo7{
+    background-image: url("img/camry40/camry4001.jpg");}
+#car_photo8{
+    background-image: url("img/camry50/camry5001.JPG");}
+#car_photo9{
+    background-image: url("img/cerato/cerato01.jpg");}

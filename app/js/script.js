@@ -129,7 +129,6 @@ function userSessionStorageRead(){
         sessionStorage.setItem("Status", true);
         location.reload();
         return changeSessionStorage;
-
     }
         else {
         alert("Неверный пароль или логин")
@@ -144,7 +143,6 @@ function changeSessionStorage() {
     let userLogo = document.getElementById("userLogo");
     let status = sessionStorage.getItem("Status");
     if (status){
-
         buttonsLogin.style.display = "none";
         userLogo.style.display = "block"
     }
