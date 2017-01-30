@@ -1,0 +1,630 @@
+$white: #fbfffb;
+$blackFont: #333;
+$Oswald: 'Oswald', sans-serif;
+$Orbitron:'Orbitron', sans-serif;
+
+
+
+
+body {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  background-color: #e9ede9;
+}
+
+#content {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  background: $white;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 180px;
+}
+
+#logo-text {
+  margin: 0;
+  font-family: $Oswald;
+  font-size: 60px;
+}
+
+#register_button {
+  color: $white;
+  position: absolute;
+  top: 127px;
+  right: 85px;
+  text-decoration: none;
+  outline: none;
+  border: 0;
+  background-color: $blackFont;
+  &:active, &:focus {
+    color: $white;
+    position: absolute;
+    top: 127px;
+    right: 85px;
+    text-decoration: none;
+    outline: none;
+    border: 0;
+    background-color: $blackFont }
+}
+
+#login_button {
+  color: $white;
+  position: absolute;
+  top: 127px;
+  right: 15px;
+  text-decoration: none;
+  outline: none;
+  border: 0;
+  background-color: $blackFont;
+  &:active, &:focus {
+    color: $white;
+    position: absolute;
+    top: 127px;
+    right: 15px;
+    text-decoration: none;
+    outline: none;
+    border: 0;
+    background-color: $blackFont }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+#register_button:hover, #car:hover, #news:hover, #contacts:hover {
+  cursor: pointer;
+}
+
+#userLogo {
+  position: absolute;
+  top: 102px;
+  right: 0;
+  color: $white;
+  border-left: solid $white 1px;
+  padding-left: 9px;
+  padding-right: 9px;
+  display: none;
+}
+
+#nav {
+  position: relative;
+  top: 12px;
+  background: $blackFont;
+  border-bottom: 2px solid #169fe6;
+  width: 100%;
+  height: 50px;
+}
+
+#home {
+  position: absolute;
+  margin-left: 4px;
+  margin-bottom: 5px;
+}
+
+#button-home {
+  width: 55px;
+  height: 50px;
+  border-right: 1px solid $white;
+}
+
+#img-logo {
+  width: 120px;
+  height: 70px;
+  position: absolute;
+  left: 300px;
+}
+
+#navbar {
+  position: absolute;
+  top: 0;
+  left: 55px;
+}
+
+#car {
+  position: absolute;
+  left: 1px;
+}
+
+#news {
+  position: absolute;
+  left: 151px;
+}
+
+#contacts {
+  position: absolute;
+  left: 301px;
+}
+
+#car, #news, #contacts {
+  color: $white;
+  font-size: 20px;
+  font-family: $Oswald;
+  background-color: $blackFont;
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-right: 1px solid $white;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: $blackFont;
+}
+  #tel {
+    ul {
+      position: absolute;
+      bottom: -7px;
+      left: 542px;
+      width: 300px;
+      height: 50px;
+      list-style-type: none;
+      list-style-position: outside;
+      margin: 0;
+    }
+  ;
+
+    li {
+      position: relative;
+      margin: -16px;
+      font-size: 14px;
+    }
+  ;
+  }
+
+  #copyright {
+    position: absolute;
+    bottom: 8px;
+    left: 89%;
+    font-size: 11px;
+  }
+
+  #footerlogo {
+    font-size: 20px;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    color: $white;
+    margin: 0;
+    font-family: $Oswald;
+  }
+
+  #copyright, #tel {
+    color: $white;
+    margin: 0;
+    font-family: $Oswald;
+  }
+
+  .login_form {
+    position: absolute;
+    top: 158px;
+    left: 42%;
+    width: 220px;
+    height: 155px;
+    margin-bottom: 200px;
+  }
+
+  .restore_pass button {
+    margin-left: 280px;
+  }
+
+  .login_form {
+    label {
+      display: none;
+    }
+
+    input {
+      &[type="text"], &[type="password"] {
+        width: 100%;
+        height: 40px;
+        position: relative;
+        margin-top: 7px;
+        font-size: 14px;
+        color: $blackFont;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.49);
+        padding-left: 20px;
+        background-clip: padding-box;
+        border-radius: 4px;
+        background-color: $white;
+      }
+
+      &[type="text"]:focus, &[type="password"]:focus {
+        box-shadow: inset 0 3px 0 #808080;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &[type="submit"] {
+        width: 90px;
+        height: 35px;
+        margin-top: 7px;
+        margin-left: 142px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        text-shadow: 0 -1px 0 #8b8b8b;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.49);
+        background-clip: padding-box;
+        border-radius: 6px;
+        background-color: $blackFont;
+        box-shadow: inset 0 1px 0 #242424;
+        cursor: pointer;
+        transition: all .1s ease-in-out;
+
+        &:hover {
+          background-color: #7e848b;
+          box-shadow: inset 0 1px 0 #a8a8a8;
+          margin-top: 10px;
+        }
+
+        &:active {
+          background-color: #70757c;
+          box-shadow: inset 0 1px 0 #999999;
+        }
+      }
+    }
+  }
+
+  .contact_form, .profile_form, .restore_pass {
+    position: absolute;
+    top: 50px;
+    left: 418px;
+    margin-bottom: 75px;
+  }
+
+  .contact_form {
+    h2, label {
+      font-family: $Orbitron
+    }
+  }
+
+  .profile_form {
+    h2, label {
+      font-family: $Orbitron
+    }
+  }
+
+  .restore_pass {
+    h2, label {
+      font-family: $Orbitron
+    }
+  }
+
+  .form_hint, .required_notification {
+    font-size: 11px;
+  }
+
+  .contact_form ul, .profile_form ul, .restore_pass ul {
+    width: 450px;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact_form li, .profile_form li, .restore_pass li {
+    padding: 12px;
+    position: relative;
+  }
+
+  .contact_form h2, .profile_form h2 {
+    margin-left: 143px;
+    display: inline;
+  }
+
+  .restore_pass h2 {
+    margin-left: 72px;
+    display: inline;
+  }
+
+  .required_notification {
+    color: #d45252;
+    margin: 5px 0 0 0;
+    display: inline;
+    float: right;
+  }
+
+  .contact_form label, .profile_form label, .restore_pass label {
+    width: 150px;
+    margin-top: 3px;
+    display: inline-block;
+    float: left;
+    padding: 3px;
+  }
+
+  .contact_form input, .profile_form input, .restore_pass input {
+    height: 20px;
+    width: 220px;
+    padding: 5px 8px;
+  }
+
+  .contact_form textarea, .profile_form textarea, .restore_pass textarea {
+    padding: 8px;
+    width: 300px;
+  }
+
+  .contact_form button, .profile_form button {
+    margin-left: 156px;
+  }
+
+  .contact_form {
+    input, textarea {
+      border: 1px solid #aaa;
+      box-shadow: 0 0 3px #ccc, 0 10px 15px #eee inset;
+      border-radius: 5px;
+    }
+  }
+
+  .profile_form {
+    input, textarea {
+      border: 1px solid #aaa;
+      box-shadow: 0 0 3px #ccc, 0 10px 15px #eee inset;
+      border-radius: 5px;
+    }
+  }
+
+  .restore_pass {
+    input, textarea {
+      border: 1px solid #aaa;
+      box-shadow: 0 0 3px #ccc, 0 10px 15px #eee inset;
+      border-radius: 5px;
+    }
+  }
+
+  .contact_form {
+    input:focus, textarea:focus {
+      background: #fff;
+      border: 1px solid #555;
+      box-shadow: 0 0 3px #aaa;
+    }
+  }
+
+  button.submit {
+    background-color: $blackFont;
+    background: linear-gradient(top, #3d3d3d, #2c2c2c);
+    border: 1px solid $blackFont;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.95);
+    border-radius: 5px;
+    box-shadow: inset 0 1px 0 0 rgba(6, 6, 6, 0.87);
+    color: $white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 $blackFont;
+
+    &:hover {
+      opacity: .85;
+      cursor: pointer;
+    }
+
+    &:active {
+      border: 1px solid #232323;
+      box-shadow: 0 0 10px 5px $blackFont inset;
+    }
+  }
+
+  .contact_form {
+    input:focus, textarea:focus {
+      padding-right: 35px;
+    }
+
+    input {
+      transition: padding .25s;
+      padding-right: 30px;
+    }
+  }
+
+  .profile_form input {
+    transition: padding .25s;
+    padding-right: 30px;
+  }
+
+  .contact_form {
+    textarea {
+      transition: padding .25s;
+      padding-right: 30px;
+    }
+
+    input:focus:invalid, textarea:focus:invalid {
+      background: #fff no-repeat 98% center;
+      box-shadow: 0 0 5px #d4683c;
+      border-color: #b0525e;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    input:required:valid, textarea:required:valid {
+      background: #fff no-repeat 98% center;
+      box-shadow: 0 0 5px #5cd053;
+      border-bottom-color: #28921f;
+    }
+  }
+
+  .restore_pass {
+    input:required:valid, textarea:required:valid {
+      background: #fff no-repeat 98% center;
+      box-shadow: 0 0 5px #5cd053;
+      border-bottom-color: #28921f;
+    }
+  }
+
+  .forgot_pass {
+    position: absolute;
+    top: 314px;
+    left: 708px;
+  }
+
+  .news_articles {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 80px;
+    position: absolute;
+    top: 48px;
+    left: 20px;
+    width: 50%;
+    height: auto;
+    border-right: 1px solid grey;
+  }
+
+  .articles {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 80px;
+    position: absolute;
+    top: 48px;
+    right: 20px;
+    width: 45%;
+    height: auto;
+  }
+
+  .newsArticlesPage {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 80px;
+    position: absolute;
+    top: 48px;
+    left: 205px;
+    width: 71%;
+    height: auto;
+  }
+
+  article {
+    border-bottom: 1px solid grey;
+    margin-right: 25px;
+  }
+
+  #news_head {
+    font-family: $Oswald;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .contact_page {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    height: 850px;
+    width: auto;
+  }
+
+  ul.products {
+    width: 603px;
+    padding-left: 0;
+
+    li {
+      float: left;
+      display: inline;
+      padding-left: 13px;
+      padding-bottom: 0;
+      margin-top: 48px;
+      margin-left: 30px;
+
+      a {
+        font-weight: bold;
+        float: none;
+      }
+    }
+  }
+
+  a.txt {
+    margin-left: 10px;
+  }
+
+  ul.products {
+    li a {
+      &.frm {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      img {
+        display: block;
+        padding: 1px;
+      }
+    }
+
+    padding-left: 13px;
+    list-style-type: none;
+    display: inline;
+  }
+
+  #car_page {
+    width: 366px;
+    height: 260px;
+    margin: 10px;
+    border: solid gray 1px;
+  }
+
+  #box {
+    width: inherit;
+    margin-bottom: 125px;
+    position: absolute;
+  }
+
+  .err {
+    position: absolute;
+    width: 300px;
+    bottom: 1px;
+    height: 23px;
+    left: 455px;
+    color: #d5354b;
+  }
+
+  .frm {
+    width: 366px;
+    height: 250px;
+    margin: 10px;
+    border: solid gray 2px;
+  }
+
+  #car_photo1 {
+    background-image: url("../img/308/30801.jpg");
+  }
+
+  #car_photo2 {
+    background-image: url("../img/2109/vaz01.jpg");
+  }
+
+  #car_photo3 {
+    background-image: url("../img/accord/accord1.jpg");
+  }
+
+  #car_photo4 {
+    background-image: url("../img/aveo/smart01.jpg");
+  }
+
+  #car_photo5 {
+    background-image: url("../img/bmw 525/bmw01.jpg");
+  }
+
+  #car_photo6 {
+    background-image: url("../img/camry/camry01.jpg");
+  }
+
+  #car_photo7 {
+    background-image: url("../img/camry40/camry4001.jpg");
+  }
+
+  #car_photo8 {
+    background-image: url("../img/camry50/camry5001.JPG");
+  }
+
+  #car_photo9 {
+    background-image: url("../img/cerato/cerato01.jpg");
+  }
+
