@@ -18,7 +18,7 @@ body {
 
 #logo-text {
   margin: 0;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 60px; }
 
 #register_button {
@@ -67,9 +67,9 @@ body {
 #userLogo {
   position: absolute;
   top: 102px;
-  right: 0px;
-  color: white;
-  border-left: solid white 1px;
+  right: 0;
+  color: #fbfffb;
+  border-left: solid #fbfffb 1px;
   padding-left: 9px;
   padding-right: 9px;
   display: none; }
@@ -118,7 +118,7 @@ body {
 #car, #news, #contacts {
   color: #fbfffb;
   font-size: 20px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   background-color: #333;
   width: 150px;
   height: 50px;
@@ -160,12 +160,12 @@ footer {
   left: 9px;
   color: #fbfffb;
   margin: 0;
-  font-family: 'Oswald', sans-serif; }
+  font-family: "Oswald", sans-serif; }
 
 #copyright, #tel {
   color: #fbfffb;
   margin: 0;
-  font-family: 'Oswald', sans-serif; }
+  font-family: "Oswald", sans-serif; }
 
 .login_form {
   position: absolute;
@@ -186,7 +186,7 @@ footer {
   position: relative;
   margin-top: 7px;
   font-size: 14px;
-  color: #000000;
+  color: #333;
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.49);
   padding-left: 20px;
@@ -229,13 +229,13 @@ footer {
   margin-bottom: 75px; }
 
 .contact_form h2, .contact_form label {
-  font-family: 'Orbitron', sans-serif; }
+  font-family: "Orbitron", sans-serif; }
 
 .profile_form h2, .profile_form label {
-  font-family: 'Orbitron', sans-serif; }
+  font-family: "Orbitron", sans-serif; }
 
 .restore_pass h2, .restore_pass label {
-  font-family: 'Orbitron', sans-serif; }
+  font-family: "Orbitron", sans-serif; }
 
 .form_hint, .required_notification {
   font-size: 11px; }
@@ -305,23 +305,23 @@ footer {
   box-shadow: 0 0 3px #aaa; }
 
 button.submit {
-  background-color: #333333;
+  background-color: #333;
   background: linear-gradient(top, #3d3d3d, #2c2c2c);
-  border: 1px solid #333333;
+  border: 1px solid #333;
   border-bottom: 1px solid rgba(51, 51, 51, 0.95);
   border-radius: 5px;
   box-shadow: inset 0 1px 0 0 rgba(6, 6, 6, 0.87);
-  color: white;
+  color: #fbfffb;
   font-weight: bold;
   padding: 6px 20px;
   text-align: center;
-  text-shadow: 0 -1px 0 #333333; }
+  text-shadow: 0 -1px 0 #333; }
   button.submit:hover {
     opacity: .85;
     cursor: pointer; }
   button.submit:active {
     border: 1px solid #232323;
-    box-shadow: 0 0 10px 5px #333333 inset; }
+    box-shadow: 0 0 10px 5px #333 inset; }
 
 .contact_form input:focus, .contact_form textarea:focus {
   padding-right: 35px; }
@@ -393,7 +393,7 @@ article {
   margin-right: 25px; }
 
 #news_head {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 22px;
   text-align: center; }
 
@@ -458,30 +458,30 @@ ul.products {
   border: solid gray 2px; }
 
 #car_photo1 {
-  background-image: url("img/308/30801.jpg"); }
+  background-image: url("../img/308/30801.jpg"); }
 
 #car_photo2 {
-  background-image: url("img/2109/vaz01.jpg"); }
+  background-image: url("../img/2109/vaz01.jpg"); }
 
 #car_photo3 {
-  background-image: url("img/accord/accord1.jpg"); }
+  background-image: url("../img/accord/accord1.jpg"); }
 
 #car_photo4 {
-  background-image: url("img/aveo/smart01.jpg"); }
+  background-image: url("../img/aveo/smart01.jpg"); }
 
 #car_photo5 {
-  background-image: url("img/bmw 525/bmw01.jpg"); }
+  background-image: url("../img/bmw 525/bmw01.jpg"); }
 
 #car_photo6 {
-  background-image: url("img/camry/camry01.jpg"); }
+  background-image: url("../img/camry/camry01.jpg"); }
 
 #car_photo7 {
-  background-image: url("img/camry40/camry4001.jpg"); }
+  background-image: url("../img/camry40/camry4001.jpg"); }
 
 #car_photo8 {
-  background-image: url("img/camry50/camry5001.JPG"); }
+  background-image: url("../img/camry50/camry5001.JPG"); }
 
 #car_photo9 {
-  background-image: url("img/cerato/cerato01.jpg"); }
+  background-image: url("../img/cerato/cerato01.jpg"); }
 
 /*# sourceMappingURL=style.css.map */
